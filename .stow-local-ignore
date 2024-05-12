@@ -1,26 +1,27 @@
+# Comments and blank lines are allowed.
 
 RCS
-•+, v
-
-CVS
-I. \#.+
-\. cvsignore
-
-\. svn
-_darcs
-\. hg
-
-\. git
-\. gitignore
+.+,v
 
 \.DS_Store
+scripts
 
-•+=
-|#*\#
 
-~/README.*
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
 ^/LICENSE.*
-~/COPYING # CVS conflict files / emacs lock files
-
-# emacs backup files
-# emacs autosave files
+^/COPYING
