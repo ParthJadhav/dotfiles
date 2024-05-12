@@ -18,6 +18,11 @@ alias npm="bun"
 alias npx="bunx"
 alias ni="bun install"
 
+alias gc="git checkout"
+alias gs="git status"
+alias gcm="git commit"
+alias ga="git add"
+
 alias q="exit"
 alias ta="tmux attach -t"
 alias tn="tmux new -s"
