@@ -1,0 +1,26 @@
+
+RCS
+•+, v
+
+CVS
+I. \#.+
+\. cvsignore
+
+\. svn
+_darcs
+\. hg
+
+\. git
+\. gitignore
+
+\.DS_Store
+
+•+=
+|#*\#
+
+~/README.*
+^/LICENSE.*
+~/COPYING # CVS conflict files / emacs lock files
+
+# emacs backup files
+# emacs autosave files
