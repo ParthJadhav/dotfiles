@@ -370,7 +370,6 @@ if is_available "nvim-dap" then
   maps.n["<leader>dp"] = { function() require("dap").pause() end, desc = "Pause (F6)" }
   maps.n["<leader>dr"] = { function() require("dap").restart_frame() end, desc = "Restart (C-F5)" }
   maps.n["<leader>dR"] = { function() require("dap").repl.toggle() end, desc = "Toggle REPL" }
-  maps.n["<leader>ds"] = { function() require("dap").run_to_cursor() end, desc = "Run To Cursor" }
 
   if is_available "nvim-dap-ui" then
     maps.n["<leader>dE"] = {
@@ -429,5 +428,8 @@ maps.n["<leader>uu"] = { ui.toggle_url_match, desc = "Toggle URL highlight" }
 maps.n["<leader>uw"] = { ui.toggle_wrap, desc = "Toggle wrap" }
 maps.n["<leader>uy"] = { ui.toggle_syntax, desc = "Toggle syntax highlighting (buffer)" }
 maps.n["<leader>uh"] = { ui.toggle_foldcolumn, desc = "Toggle foldcolumn" }
+
+-- CUSTOM MAPPINGS -- 
+maps.n["<leader>dsb"] = { "di{Vk]p", desc = "Delete sorrounding block" }
 
 utils.set_mappings(astronvim.user_opts("mappings", maps))
