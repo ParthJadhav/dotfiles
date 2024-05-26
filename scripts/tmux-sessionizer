@@ -1,7 +1,7 @@
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
-    selected=$(fd . -t d -d 1 ~/Development ~/.config | fzf)
+    selected=$(fd . -t d -d 1 ~/Development ~/dotfiles/scripts ~/dotfiles/.config | fzf)
 fi
 
 if [[ -z $selected ]]; then
