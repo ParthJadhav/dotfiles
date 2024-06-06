@@ -33,7 +33,7 @@ return {
   { "nvim-lua/plenary.nvim", version = "^0.1", optional = true },
   { "nvim-neo-tree/neo-tree.nvim", version = "^3", optional = true },
   { "nvim-telescope/telescope-fzf-native.nvim", commit = "6c921ca12321edaa773e324ef64ea301a1d0da62", optional = true },
-  { "nvim-telescope/telescope.nvim", version = "^0.1", optional = true },
+  { "nvim-telescope/telescope.nvim", tag = "0.1.4", optional = true },
   { "nvim-tree/nvim-web-devicons", commit = "7f30f2da3c3641841ceb0e2c150281f624445e8f", optional = true },
   { "nvim-treesitter/nvim-treesitter", vim.fn.has "nvim-0.9" ~= 1 and "63260da18bf273c76b8e2ea0db84eb901cab49ce" or "10d79b5dbbdffc3edf307b189284fb62e2e79a3e", optional = true },
   { "nvim-treesitter/nvim-treesitter-textobjects", commit = "dd0b2036c3a27cb6e6486f8bd24188c6ca43af0b", optional = true },
