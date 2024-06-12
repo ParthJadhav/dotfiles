@@ -254,10 +254,10 @@ if is_available "telescope.nvim" then
   maps.n["<leader>sb"] = { function() require("telescope.builtin").buffers() end, desc = "Find buffers" }
   maps.n["<leader>sC"] = { function() require("telescope.builtin").commands() end, desc = "Find commands" }
   maps.n["<leader>sc"] = { function() require("telescope.builtin").colorscheme() end, desc = "Find colorscheme" }
-  maps.n["<leader>f"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" }
-  maps.n["<leader>sf"] = { function() require("telescope.builtin").find_files() end, desc = "Find files" }
+  maps.n["<leader>f"] = { function() require("fzf-lua").files() end, desc = "Find files" }
+  maps.n["<leader>sf"] = { function() require("fzf-lua").find_files() end, desc = "Find files" }
   maps.n["<leader>sF"] = {
-    function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
+    function() require("fzf-lua").find_files { hidden = true, no_ignore = true } end,
     desc = "Find all files",
   }
   maps.n["<leader>sh"] = { function() require("telescope.builtin").help_tags() end, desc = "Find help" }
@@ -271,10 +271,11 @@ if is_available "telescope.nvim" then
   end
   maps.n["<leader>so"] = { function() require("telescope.builtin").oldfiles() end, desc = "Find history" }
   maps.n["<leader>sr"] = { function() require("telescope.builtin").registers() end, desc = "Find registers" }
-  maps.n["<leader>st"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
+  maps.n["<leader>st"] = { function() require("fzf-lua").live_grep() end, desc = "Find words" }
+  maps.n["<leader>sT"] = { function() require("fzf-lua").lgrep_curbuf() end, desc = "Find words in current buffer" }
   maps.n["<leader>sW"] = {
     function()
-      require("telescope.builtin").live_grep {
+      require("fzf-lua").live_grep {
         additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
       }
     end,
