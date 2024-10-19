@@ -10,7 +10,7 @@ alias e="nvim ."
 alias c="clear"
 
 alias cat="bat"
-alias ls="exa"
+alias ls="eza"
 
 alias yarn="bun"
 alias pnpm="bun"
