@@ -1,10 +1,5 @@
-export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/spotify:$PATH"
-
-ZSH_THEME="robbyrussell"
-plugins=(git zsh-autosuggestions)
-source $ZSH/oh-my-zsh.sh
 
 alias e="nvim ."
 alias c="clear"
@@ -30,7 +25,6 @@ alias tmls="tmux ls"
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_us.UTF-8
-source ~/.cargo/env
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$PATH:$HOME/.npm-global/bin"
