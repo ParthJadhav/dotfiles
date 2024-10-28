@@ -42,6 +42,8 @@ return {
         "c",
         "tsx",
         "javascript",
+        "typescript",
+        "tsx",
         "prisma",
         "lua",
         "markdown",

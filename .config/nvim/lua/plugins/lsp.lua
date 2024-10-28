@@ -59,7 +59,7 @@ return {
               end
             })
           end
-          opts.ensure_installed = { "rust_analyzer", "tsserver", "tailwindcss", "biome" }
+          opts.ensure_installed = { "rust_analyzer", "vtsls", "cssls", "tailwindcss", "biome" }
         end,
         config = require "plugins.configs.mason-lspconfig",
       },
